@@ -1,3 +1,5 @@
+import 'package:cubit/core/routing/app_router.dart';
+import 'package:cubit/doc_app.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,6 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         
       ),
+      home: DocApp(appRouter: AppRouter()),
     );
   }
 }
