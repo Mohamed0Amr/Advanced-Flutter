@@ -1,5 +1,5 @@
 import 'package:cubit/core/routing/routes.dart';
-import 'package:cubit/core/widgets/login_screen.dart';
+import 'package:cubit/features/login/login_screen.dart';
 import 'package:cubit/features/onboarding/onboarding_screen.dart';
 import 'package:flutter/material.dart';
 
