@@ -1,6 +1,6 @@
-import 'package:cubit/core/routing/app_router.dart';
-import 'package:cubit/doc_app.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_complete_project/core/routing/app_router.dart';
+import 'package:flutter_complete_project/doc_app.dart';
 
 void main() {
   runApp(const MyApp());
