@@ -1,9 +1,9 @@
-import 'package:cubit/core/helpers/extention.dart';
-import 'package:cubit/core/routing/routes.dart';
-import 'package:cubit/core/theming/color.dart';
-import 'package:cubit/core/theming/style.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_complete_project/core/helpers/extensions.dart';
+import 'package:flutter_complete_project/core/theming/colors.dart';
+import 'package:flutter_complete_project/core/theming/styles.dart';
+
+import '../../../core/routing/routes.dart';
 
 class GetStartedButton extends StatelessWidget {
   const GetStartedButton({super.key});
@@ -15,14 +15,21 @@ class GetStartedButton extends StatelessWidget {
         context.pushNamed(Routes.loginScreen);
       },
       style: ButtonStyle(
-        backgroundColor: MaterialStateProperty.all(ColorsManager.mainBBlue),
+        backgroundColor: MaterialStateProperty.all(ColorsManager.mainBlue),
         tapTargetSize: MaterialTapTargetSize.shrinkWrap,
-        minimumSize: MaterialStateProperty.all(Size(double.infinity, 50.h)),
+        minimumSize: MaterialStateProperty.all(
+          const Size(double.infinity, 52),
+        ),
         shape: MaterialStateProperty.all(
-          RoundedRectangleBorder(borderRadius: BorderRadius.circular(16.r)),
+          RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(16),
+          ),
         ),
       ),
-      child: Text('Get Started', style: TextStyles.font16WhiteSemiBold),
+      child: Text(
+        'Get Started',
+        style: TextStyles.font16WhiteMedium,
+      ),
     );
   }
 }
