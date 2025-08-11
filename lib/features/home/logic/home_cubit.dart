@@ -43,7 +43,7 @@ class HomeCubit extends Cubit<HomeState> {
   }
 
   /// returns the list of doctors based on the specialization id
-  getDoctorsListBySpecializationId(specializationId) {
+  List<Doctors?>? getDoctorsListBySpecializationId(specializationId) {
     return specializationsList
         ?.firstWhere((specialization) => specialization?.id == specializationId)
         ?.doctorsList;
